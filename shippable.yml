@@ -1,3 +1,7 @@
+jobs:
+  - name: basic-node_runCI
+    type: runCI
+
 # Language setting http://docs.shippable.com/ci/languages/node/
 language: node_js
 
