@@ -6,7 +6,8 @@ resources:
 
 jobs:
   - name: basic-node_runCI
-    steps: nightly_trigger
+    steps: 
+      - IN: nightly_trigger
     type: runCI
 
 # Language setting http://docs.shippable.com/ci/languages/node/
