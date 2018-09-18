@@ -3,8 +3,6 @@ resources:
     type: time
     versionTemplate:
       interval: "0 23 * * *"
-    flags:
-      - nightly_trigger
 
 jobs:
   - name: basic-node_runCI
