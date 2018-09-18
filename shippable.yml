@@ -1,7 +1,14 @@
+resources:
+  - name: nightly_trigger
+    type: time
+    versionTemplate:
+      interval: "0 23 * * *"
+    flags:
+      - nightly_trigger
+
 jobs:
   - name: basic-node_runCI
-    steps:
-      - IN: true
+    steps: nightly_trigger
     type: runCI
 
 # Language setting http://docs.shippable.com/ci/languages/node/
