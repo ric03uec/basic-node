@@ -11,18 +11,18 @@ jobs:
       - IN: trigger_nightly
     
 
-  - name: post_ci_steps
-    type: runSh
-    steps:
-      - IN: basic-node_runCI
-      - TASK:
-          name: "Run these commands after CI job"
-          script:
-            - echo "OMG, the CI stuff worked"
-            - echo "What's the machine config here?"
-            - uname -a
-            - uptime
-            - echo "Ok, I'm done."
+#  - name: post_ci_steps
+#    type: runSh
+#    steps:
+#      - IN: basic-node_runCI
+#      - TASK:
+#          name: "Run these commands after CI job"
+#          script:
+#            - echo "OMG, the CI stuff worked"
+#            - echo "What's the machine config here?"
+#            - uname -a
+#            - uptime
+#            - echo "Ok, I'm done."
 
 # Language setting http://docs.shippable.com/ci/languages/node/
 language: node_js
