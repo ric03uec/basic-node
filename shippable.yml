@@ -9,8 +9,8 @@ jobs:
     type: runCI
     steps: 
       - IN: trigger_nightly
+      - IN: reg_dh_ric03uec
     
-
   - name: post_ci_steps
     type: runSh
     steps:
